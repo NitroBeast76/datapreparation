@@ -1,0 +1,24 @@
+Clustering Summary
+==================
+Date: 2026-04-20 14:11:01
+
+Number of clusters chosen: 148
+Total anime titles: 21,945
+Average titles per cluster: 148.3
+
+Cluster size statistics:
+  Minimum: 13
+  Maximum: 873
+  Median:  128
+  Mean:    148.3
+
+Files produced:
+  - elbow_chart.png           (elbow method plot)
+  - kmeans_model.pkl           (trained KMeans model)
+  - anime_data.csv     (clean data with cluster_id)
+  - clustering_summary.txt         (this file)
+
+How to use the outputs:
+  - Place anime_data.csv in your Flask app directory.
+  - Update app.py to use anime_file="anime_data.csv".
+  - The model (kmeans_model.pkl) can be loaded for future predictions.
